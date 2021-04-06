@@ -1,0 +1,46 @@
+{%extends 'index.html'%}
+
+{%block content%}
+<div class="container p-4">
+    <div class="container bg-light">
+        <div class="card-body p-4">
+        	<h5 class="card-title">Contoh Abstrak dari suatu film</h5>
+        	<table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Judul</th>
+                  <th scope="col">Abstrak</th>
+                  <th scope="col">Genre</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Toy Story</td>
+                  <td>Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Woody plots against Buzz. But when circumstances separate Buzz and Woody from their owner, the duo eventually learns to put aside their differences.</td>
+                  <td>Animation, Comedy, Family</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Assassins</td>
+                  <td>Assassin Robert Rath arrives at a funeral to kill a prominent mobster, only to witness a rival hired gun complete the job for him -- with grisly results. Horrified by the murder of innocent bystanders, Rath decides to take one last job and then return to civilian life. But finding his way out of the world of contract killing grows ever more dangerous as Rath falls for his female target and becomes a marked man himself.</td>
+                  <td>Action, Adventure, Crime, Thriller</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Sabrina</td>
+                  <td>An ugly duckling having undergone a remarkable change, still harbors feelings for her crush: a carefree playboy, but not before his business-focused brother has something to say about it.</td>
+                  <td>Comedy, Romance</td>
+                </tr>
+              </tbody>
+            </table>
+
+			<h5 class="card-title">RESULT : </h5>
+
+			<h3>{{ results }}</h3>
+			<a href="/prediction" class="btn btn-primary">Back to prediction</a>
+        </div>
+    </div>
+</div>
+{%endblock%}
